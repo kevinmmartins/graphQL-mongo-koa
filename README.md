@@ -12,7 +12,7 @@ Simple project to practice graphQL with Mongo and Koa
 ## Run with Docker Compose
 
 ```bash
-sudo docker-compose up
+docker-compose up
 ```
 
 ## Hello world
