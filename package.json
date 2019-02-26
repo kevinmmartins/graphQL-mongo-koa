@@ -1,0 +1,25 @@
+{
+  "name": "graphQL-mongo-koa",
+  "version": "1.0.0",
+  "description": "Simple project to practice graphQL with Mongo and Koa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinmmartins/graphQL-mongo-koa.git"
+  },
+  "keywords": [],
+  "author": "Kevin Martins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinmmartins/graphQL-mongo-koa/issues"
+  },
+  "homepage": "https://github.com/kevinmmartins/graphQL-mongo-koa#readme",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-graphql": "^0.8.0",
+    "koa-mount": "^4.0.0"
+  }
+}
