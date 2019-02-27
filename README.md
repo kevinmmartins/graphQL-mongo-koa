@@ -12,11 +12,32 @@ Simple project to practice graphQL with Mongo and Koa
 ## Run with Docker Compose
 
 ```bash
+docker-compose build
 docker-compose up
 ```
 
-## Hello world
+## Check the project
+
+### Go to
 
 ```http
 http://localhost:8085/graphql
 ```
+
+### Use the Query
+
+```graphql
+{
+	user(name: "Kevin Martins") {
+		name
+    age
+    birthday
+    nick
+    id
+  }
+}
+```
+
+### Execute
+
+ ![alt text](https://user-images.githubusercontent.com/20428703/53459347-2d96e280-3a18-11e9-9234-5a3bb2da85c5.png)
