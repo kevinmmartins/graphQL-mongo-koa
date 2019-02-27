@@ -29,7 +29,7 @@ http://localhost:8085/graphql
 ```graphql
 {
 	user(name: "Kevin Martins") {
-		name
+	name
     age
     birthday
     nick
