@@ -16,3 +16,11 @@ services:
       - "27017:27017"
     volumes:
       - ./data/db:/data/db
+  mongo-seed:
+    build: ./mongo-seed
+    links:
+      - mongo
+networks:
+  default:
+    external:
+      name: project-local-network

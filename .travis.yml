@@ -5,5 +5,5 @@ cache:
   directories:
     - "node_modules"
 install:
-    - npm install graphql koa koa-graphql koa-mount --save
+    - npm install graphql koa koa-graphql koa-mount pm2 mongoose --save
 script: 'true'

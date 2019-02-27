@@ -1,9 +1,22 @@
-const { buildSchema } = require('graphql');
+const { GraphQLSchema, GraphQLObjectType, GraphQLString} = require('graphql');
+const userGraphQLType =  require('./userType');
+const User = require('../database/models/users');
 
-const schema = buildSchema(`
- type Query {
-   hello_world: String
- }
-`);
+const RootQuery = new GraphQLObjectType({
+  name: 'RootQueryType',
+  fields: {
+    user: {
+      type: userGraphQLType,
+      args: { name: { type: GraphQLString }},
+      resolve(parent, args) {
+        return User.findOne({
+          name: args.name
+        })
+      }
+    }
+  }
+})
 
-module.exports = schema;
+module.exports = new GraphQLSchema({
+  query: RootQuery
+});
