@@ -19,7 +19,7 @@
   "homepage": "https://github.com/kevinmmartins/graphQL-mongo-koa#readme",
   "dependencies": {
     "graphql": "^15.8.0",
-    "koa": "^2.13.4",
+    "koa": "^2.14.1",
     "koa-graphql": "^0.12.0",
     "koa-mount": "^4.0.0",
     "mongoose": "^6.7.2",
